@@ -1,0 +1,170 @@
+@import "../vars.css";
+
+.header {
+  background-color: var(--background-color-alt);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.linkContainer {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background-color: var(--background-color-alt);
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+
+.linkSign {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.toggleTheme {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+.openSearchBtn {
+  font-size: 1rem;
+}
+.toggleMenu {
+  font-size: 1rem;
+  transition: transform 0.5s;
+}
+
+.toggleMenu:hover {
+  transform: rotate(90deg);
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.signBtns {
+  display: flex;
+  display: none;
+}
+
+.signin {
+  margin-right: 0.5rem;
+  border: 1px solid var(--light-color-alt);
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+.signin:hover {
+  color: var(--light-color);
+  border-color: var(--light-color);
+}
+
+.signup {
+  background-color: blueviolet;
+  padding: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    120deg,
+    orange,
+    red,
+    blue,
+    green,
+    blue,
+    red,
+    orange
+  );
+  background-size: 200% 100%;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.signup:hover::before {
+  animation: fa 0.5s linear infinite;
+}
+@keyframes fa {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.signup span {
+  position: relative;
+  background-color: var(--background-color);
+  display: block;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.userImageContainer {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.userImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.userImage:hover {
+  transform: scale(1.1);
+}
+
+.logout {
+  position: absolute;
+  right: 0.1rem;
+  top: 3rem;
+  color: var(--background-color-alt);
+  background-color: var(--light-color);
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+}
+.logout:hover {
+  color: var(--primary-color-500);
+}
+
+/* > small screen */
+
+@media (min-width: 700px) {
+  .linkContainer {
+    display: block;
+    position: initial;
+  }
+  .linkList {
+    display: flex;
+  }
+  .link {
+    margin: 0 1rem;
+  }
+  .toggleMenu {
+    display: none;
+  }
+  .signBtns {
+    display: block;
+  }
+  .linkSign {
+    display: none;
+  }
+}

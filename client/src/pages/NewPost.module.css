@@ -1,0 +1,57 @@
+@import "../vars.css";
+
+.newPostContainer {
+  padding: 3rem;
+}
+.newPostForm {
+  background-color: var(--background-color-alt);
+  padding: 1rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.newPostControl {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.newPostLabel {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.newPostInput {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+  outline: none;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.newPostBtn {
+  width: 100%;
+  color: var(--primary-color-800);
+  background-color: var(--primary-color-400);
+  padding: 0.4rem 0.4rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.newPostBtn:hover {
+  color: var(--primary-color-200);
+  background-color: var(--primary-color-600);
+}
+
+.newPostAlert {
+  color: var(--dark-red);
+}
+
+.newPostAlertBorder {
+  /* border: 2px solid var(--dark-red); */
+  border-bottom: 2px solid var(--dark-red);
+  outline: 2px solid var(--dark-red);
+}

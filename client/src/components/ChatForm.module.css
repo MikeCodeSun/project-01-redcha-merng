@@ -1,0 +1,33 @@
+.chatFormContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.chatForm {
+  display: flex;
+  width: 100%;
+}
+
+.chatInput {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.1rem;
+}
+.chatBtn {
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  color: #60a5fa;
+  transition: color 0.3s;
+}
+.chatBtn:hover {
+  color: #2563eb;
+}
+.chatBtnDisabled {
+  color: initial;
+  cursor: not-allowed;
+}
+.chatBtnDisabled:hover {
+  color: initial;
+}

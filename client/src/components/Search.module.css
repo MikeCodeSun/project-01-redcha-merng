@@ -1,0 +1,55 @@
+@import "../vars.css";
+
+.searchContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.searchForm {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.searchControl {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchInput,
+.searchBtn {
+  font-size: 1rem;
+  padding: 0.3rem;
+  border: 1px solid var(--light-color-alt);
+  background-color: var(--background-color-alt);
+  color: inherit;
+}
+
+.searchInput {
+  outline: none;
+  border-right: none;
+  width: 100%;
+  padding: 0.35rem;
+}
+
+.searchBtn {
+  margin-left: -1px;
+}
+
+.searchList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-alt);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+.searchList a {
+  padding: 0.35rem;
+}

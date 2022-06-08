@@ -1,0 +1,43 @@
+/* chat message right */
+.chatMessageContainer {
+  width: 65%;
+  padding: 0.5rem;
+}
+
+.chatMessage {
+  background-color: var(--background-color);
+  height: 485px;
+
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.messageListContainer {
+  overflow: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.singleMessageContainer {
+  display: flex;
+  margin-bottom: 5px;
+}
+.from {
+  justify-content: flex-end;
+}
+.to {
+  align-items: flex-start;
+}
+.singleMessage {
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}
+.fromColor {
+  background-color: #2563eb;
+}
+.toColor {
+  background-color: #374151;
+}

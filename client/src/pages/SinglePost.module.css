@@ -1,0 +1,6 @@
+.singleComment {
+  cursor: default;
+}
+.singleComment:hover {
+  background-color: transparent;
+}
